@@ -7,7 +7,7 @@ int main() {
 	int num = 1;
 	int sum = 0;
 
-	while (num <= 100) {
+	while (num <= 1000) {
 		sum += num;
 		num += 2;
 	}
