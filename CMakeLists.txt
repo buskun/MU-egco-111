@@ -3,3 +3,4 @@ project(MU-egco-111 C)
 
 set(CMAKE_C_STANDARD 90)
 add_executable(1 27-09-2018/1.c)
+add_executable(2 27-09-2018/2.c)

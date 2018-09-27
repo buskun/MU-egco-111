@@ -7,11 +7,13 @@ int main() {
 	int price;
 	int distance;
 	int total_price = 0;
+
 	printf("Price      : ");
 	scanf("%d", &price);
 	printf("Distance   : ");
 	scanf("%d", &distance);
 	printf("TotalPrice : ");
+
 	total_price += price;
 
 	if (price < 5000) {
