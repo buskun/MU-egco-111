@@ -11,6 +11,11 @@ int main() {
 	printf("Enter Fraction B (m/n): ");
 	scanf("%d/%d", &m2, &n2);
 
+	if (n1 == 0 || n2 == 0 || m2 == 0) {
+		printf("Divider cannot be 0");
+		return 0;
+	}
+
 	int i;
 	for (i = 0; i < 4; i++) {
 		int mAns = 0;
@@ -69,8 +74,14 @@ int main() {
 				break;
 			default:;
 		}
-		if (mAns != 0) { printf("%d/%d\n", mAns, nAns); }
-		else { printf("0\n"); }
+		
+		if (nAns < 0) {
+			mAns = -mAns;
+			nAns = -nAns;
+		}
+
+		if (mAns == 0 || nAns == 1) { printf("%d\n", mAns); }
+		else { printf("%d/%d\n", mAns, nAns); }
 	}
 
 
