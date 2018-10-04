@@ -35,5 +35,22 @@ int main() {
 	printf("Average : %.2f\n", (float) sum / num);
 	printf("Minimum : %d\n", min);
 	printf("Maximum : %d\n", max);
+
+	for (i = 0; i < num - 1; i++) {
+		int j;
+		for (j = i + 1; j < num; j++) {
+			if (arr[i] > arr[j]) {
+				int tmp = arr[i];
+				arr[i] = arr[j];
+				arr[j] = tmp;
+			}
+		}
+	};
+
+	printf("Sorted array: ");
+	for (i = 0; i < num; i++) {
+		printf(" %d", arr[i]);
+	}
+
 	return 0;
 }
