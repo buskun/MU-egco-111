@@ -74,7 +74,7 @@ int main() {
 				break;
 			default:;
 		}
-		
+
 		if (nAns < 0) {
 			mAns = -mAns;
 			nAns = -nAns;
