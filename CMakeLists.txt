@@ -17,3 +17,5 @@ add_executable(EGCE01 "Lab Question 2018/EGCE01.c")
 add_executable(EGEE02 "Lab Question/EGEE02.c")
 add_executable(EGCO01 "Lab Question/EGCO01.c")
 add_executable(EGCO02 "Lab Question/EGCO02.c")
+
+add_executable(EGCE03 "Lab Question 2018/EGCE03.c")
